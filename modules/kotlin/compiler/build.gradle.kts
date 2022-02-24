@@ -5,7 +5,7 @@ plugins {
 kotlin {
    jvm {
       tasks.named<Test>("jvmTest") {
-         useJUnitPlatform()
+         useJUnit()
          testLogging {
             events = setOf(
                org.gradle.api.tasks.testing.logging.TestLogEvent.FAILED,
@@ -26,7 +26,7 @@ kotlin {
       }
       val jvmTest by getting {
          dependencies {
-            api(kotlin("test-junit"))
+            implementation(kotlin("test-junit"))
          }
       }
    }
