@@ -1,4 +1,4 @@
-package io.github.jervnorsk.aster.compiler.kotlin;
+package io.github.jervnorsk.aster.compiler.kotlin
 
 import kotlin.test.Test
 
