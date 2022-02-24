@@ -21,7 +21,6 @@ kotlin {
          }
       }
       val jsTest by getting {
-         resources.srcDir("src/jsTest/typescript")
          dependencies {
             implementation(kotlin("test-js"))
          }
